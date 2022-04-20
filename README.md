@@ -19,6 +19,9 @@ Required envrionment variables:
   Jenkins access token to trigger downstream build.
 -	GITLAB_API_TOKEN
   Gitlab API token to read current open MRs to verify if the tests for an upstream PR is already running.
+
+Required git and GOPRIVATE settings:
+
 - GOPRIVATE should be set up to access repositories under vmware's private network, run:
 ```Bash
 $ go env -w GOPRIVATE=gitlab.eng.vmware.com/tanzu-framework
