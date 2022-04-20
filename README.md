@@ -9,6 +9,8 @@ APIs listen on `/webhook` for incoming Github webhook event.
 Required envrionment variables:
 - TANZU_FRAMEWORK_REPO_ORG
    Org name / owner of `tanzu-framework` repo (`vmware-tanzu`)
+-  WEBHOOK_PATH
+   Webhook path to listen to. Defaults to `/webhook` if not mentioned.
 -	GH_WEBHOOK_SECRET
    Github webhook secret, should be same as the one configured on github.com, this is to verify the github webhook event payload.
 -	GITHUB_TOKEN
